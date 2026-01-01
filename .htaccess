@@ -4,7 +4,28 @@
     </IfModule>
 
     RewriteEngine On
+    # DESDE ACA ES PARA EVITAR ASSETS BROWSER
+    # Angular build lives under /assets/angular/browser.
+    # But src/index.html references static files as /assets/* and /favicon.ico.
+    # These rewrites make production behave like ng serve without manual edits.
 
+    # Serve /favicon.ico from the Angular build if missing at the web root.
+    RewriteCond %{REQUEST_URI} ^/favicon\.ico$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/assets/angular/browser/favicon.ico -f
+    RewriteRule ^favicon\.ico$ /assets/angular/browser/favicon.ico [L]
+
+    # Map /assets/* to /assets/angular/browser/assets/* when that file/dir exists.
+    # Avoid rewriting /assets/angular/* (Angular runtime chunks) to prevent loops.
+    RewriteCond %{REQUEST_URI} ^/assets/(.*)$
+    RewriteCond %{REQUEST_URI} !^/assets/angular/ [NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/assets/angular/browser/assets/%1 -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/assets/angular/browser/assets/%1 -d
+    RewriteRule ^assets/(.*)$ /assets/angular/browser/assets/$1 [L]
+    #HASTA ACA ESO DE LOS ASSETS BROWSER
+    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

@@ -17,22 +17,22 @@
 	/*=====================================
 	Sticky
 	======================================= */
-	window.onscroll = function () {
-		var header_navbar = document.querySelector(".navbar-area");
-    var routeroutlethtml = document.querySelector(".espaciorouteroutlet");
+	// window.onscroll = function () {
+	// 	var header_navbar = document.querySelector(".navbar-area");
+    // var routeroutlethtml = document.querySelector(".espaciorouteroutlet");
 
-		var sticky = header_navbar.offsetTop;
+	// 	var sticky = header_navbar.offsetTop;
 
-		if (window.pageYOffset > sticky) {
-      //OCULTAR NAVBARPEQUEÑO
-      header_navbar.classList.add("sticky");
-      routeroutlethtml.classList.add("espacionavbar");
-    } else {
-      //MOSTRAR NAVBARPEQUEÑO
-      header_navbar.classList.remove("sticky");
-      routeroutlethtml.classList.remove("espacionavbar");
-    }
-	};
+	// 	if (window.pageYOffset > sticky) {
+    //   //OCULTAR NAVBARPEQUEÑO
+    //   header_navbar.classList.add("sticky");
+    //   routeroutlethtml.classList.add("espacionavbar");
+    // } else {
+    //   //MOSTRAR NAVBARPEQUEÑO
+    //   header_navbar.classList.remove("sticky");
+    //   routeroutlethtml.classList.remove("espacionavbar");
+    // }
+	// };
 
 	//===== navbar-toggler
 	// let navbarToggler = document.querySelector(".navbar-toggler");

@@ -1515,7 +1515,7 @@ p {
 	03. Start Features CSS
 ===============================*/
 .Features {
-  background: #fff;
+  /* background: #fff; */
 }
 
 .Features .feature-content {
@@ -1691,7 +1691,7 @@ p {
 	04. Start Services CSS
 ===============================*/
 .services {
-  background: #F9FAFF;
+  /* background: #F9FAFF; */
   padding-bottom: 85px;
 }
 
@@ -1866,7 +1866,7 @@ p {
 	09. Start Pricing Table CSS
 ===============================*/
 .pricing-table {
-  background: #fff;
+  /* background: #fff; */
   position: relative;
 }
 
@@ -2395,6 +2395,16 @@ p {
   position: relative;
   background: #008089;
   background-image: url('../images/pattern.png');
+  background-size: 1000px 1000px; /* Aumenta el tamaño del patrón */
+  image-rendering: crisp-edges; /* Mantiene líneas nítidas si es SVG o PNG */
+
+}
+.caracteristicasparticles{
+  width:100%; height:600px; 
+  position:relative; display:flex; align-items:center; justify-content:center;
+  background-image: url('../images/pattern.png') !important;
+  background-size: 1000px 1000px !important; /* Aumenta el tamaño del patrón */
+  image-rendering: crisp-edges !important; /* Mantiene líneas nítidas si es SVG o PNG */
 }
 
 .free-version-banner .section-title {

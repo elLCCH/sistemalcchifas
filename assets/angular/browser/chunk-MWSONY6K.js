@@ -1,1 +1,0 @@
-import{F as t,l as s,q as o}from"./chunk-MLUYLOKM.js";function i(){return a=>a.pipe(o(r=>{if(!r?.success)throw new Error(r?.errors?.[0]||r?.message||"Error en la respuesta del servidor");return r.data}),t(r=>{let n=r?.error?.message||r?.message||"Error al conectarse con el servicio",e=new Error(n);return e.status=r?.status||0,s(()=>e)}))}export{i as a};

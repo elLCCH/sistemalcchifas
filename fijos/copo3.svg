@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="64" height="64">
+  <defs>
+    <g id="armOutline">
+      
+      <line x1="100" y1="100" x2="100" y2="18" stroke="#1d3557" stroke-width="12" stroke-linecap="round" />
+      <polyline points="76,34 100,52 124,34" stroke="#1d3557" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <polyline points="70,58 100,78 130,58" stroke="#1d3557" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      
+      <line x1="100" y1="100" x2="100" y2="18" stroke="#4cc9f0" stroke-width="6" stroke-linecap="round" />
+      <polyline points="76,34 100,52 124,34" stroke="#4cc9f0" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <polyline points="70,58 100,78 130,58" stroke="#4cc9f0" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </g>
+  </defs>
+  <use href="#armOutline" />
+  <use href="#armOutline" transform="rotate(60 100 100)" />
+  <use href="#armOutline" transform="rotate(120 100 100)" />
+  <use href="#armOutline" transform="rotate(180 100 100)" />
+  <use href="#armOutline" transform="rotate(240 100 100)" />
+  <use href="#armOutline" transform="rotate(300 100 100)" />
+  <circle cx="100" cy="100" r="14" fill="#4cc9f0" stroke="#1d3557" stroke-width="4" />
+</svg>

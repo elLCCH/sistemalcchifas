@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="64" height="64">
+  <defs>
+    <g id="arm2" stroke="#bfe6ff" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="100" y1="78" x2="100" y2="16" stroke-width="7" />
+      <polyline points="82,30 100,46 118,30" stroke-width="6.5" />
+      <polyline points="74,52 100,70 126,52" stroke-width="6.5" />
+      <circle cx="100" cy="14" r="5" fill="#ffffff" stroke="none" />
+    </g>
+  </defs>
+  <use href="#arm2" />
+  <use href="#arm2" transform="rotate(60 100 100)" />
+  <use href="#arm2" transform="rotate(120 100 100)" />
+  <use href="#arm2" transform="rotate(180 100 100)" />
+  <use href="#arm2" transform="rotate(240 100 100)" />
+  <use href="#arm2" transform="rotate(300 100 100)" />
+  <polygon points="100,78 119,89 119,111 100,122 81,111 81,89" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linejoin="round" />
+</svg>

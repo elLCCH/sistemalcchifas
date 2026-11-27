@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="64" height="64">
+  <defs>
+    <linearGradient id="cobaltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077b6" />
+      <stop offset="100%" stop-color="#023e8a" />
+    </linearGradient>
+    <g id="armCobalt" stroke="url(#cobaltGrad)" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="100" y1="100" x2="100" y2="20" stroke-width="7" />
+      <polygon points="100,8 110,22 100,34 90,22" fill="#0096c7" stroke="none" />
+      <polyline points="76,30 100,48 124,30" stroke-width="6" fill="none" />
+      <polyline points="68,50 100,72 132,50" stroke-width="6" fill="none" />
+    </g>
+  </defs>
+  <use href="#armCobalt" />
+  <use href="#armCobalt" transform="rotate(60 100 100)" />
+  <use href="#armCobalt" transform="rotate(120 100 100)" />
+  <use href="#armCobalt" transform="rotate(180 100 100)" />
+  <use href="#armCobalt" transform="rotate(240 100 100)" />
+  <use href="#armCobalt" transform="rotate(300 100 100)" />
+  <polygon points="100,76 121,88 121,112 100,124 79,112 79,88" fill="#caf0f8" stroke="#0077b6" stroke-width="5" />
+  <circle cx="100" cy="100" r="7" fill="#023e8a" />
+</svg>
